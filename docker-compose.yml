@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  web-app:
+    build: .
+    ports:
+      - "8000:5000"
+    environment:
+      - ENV_2 = "value_2"
+  
+  ubuntu:
+    image: ubuntu:latest
+    environment:
+      - ENV_1 = "value_1"
+  
+  fedora:
+    image: fedora:latest
+    
+    environment:
+      - ENV_3 = "value_3"
