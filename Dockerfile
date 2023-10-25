@@ -6,7 +6,9 @@ RUN apk add python3 py3-pip
 
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
-ENV ENV_1="test"
+ENV ENV_1="test333"
+ENV ENV_2="value_2"
+ENV ENV_3="value_3"
 
 COPY app/* /app
 
